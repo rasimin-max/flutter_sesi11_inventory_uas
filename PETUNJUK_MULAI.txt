@@ -1,0 +1,23 @@
+PROJECT FLUTTER SESI 11 SUDAH DIUBAH MENJADI INVENTORYKU UAS
+
+1. Ekstrak folder ini.
+2. Buka folder flutter_sesi11_inventory_uas di Android Studio.
+3. Buka lib/config/api_config.dart.
+4. Ganti 192.168.1.10 dengan IPv4 laptop Anda.
+   Backend Anda memakai Apache port 8080, jadi formatnya:
+   http://IP_LAPTOP:8080/uas_inventory_api
+5. Buka Terminal Android Studio, jalankan:
+   flutter clean
+   flutter pub get
+6. Hubungkan HP dan laptop pada Wi-Fi yang sama.
+7. Pastikan XAMPP Apache dan MySQL aktif.
+8. Jalankan aplikasi dengan flutter run.
+
+Jika memakai emulator Android, baseUrl dapat diubah menjadi:
+http://10.0.2.2:8080/uas_inventory_api
+
+Build APK:
+flutter build apk --release
+
+Hasil APK:
+build/app/outputs/flutter-apk/app-release.apk
